@@ -21,7 +21,7 @@
               <b-form-input id="input-period-start" type="date" v-model="form.frdate"></b-form-input>
               <b-form-input id="input-period-end" type="date" v-model="form.todate"></b-form-input>
               <b-input-group-append>
-                <b-button type="reset" variant="outline-primary">検索</b-button>
+                <b-button type="submit" variant="outline-primary">検索</b-button>
               </b-input-group-append>
             </b-input-group>
           </b-form>

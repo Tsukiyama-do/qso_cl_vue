@@ -14,7 +14,7 @@
           <div class="card" style="background-color: rgba(245, 245, 245, 0.7); ">
             <div class="card-body">
               <h5 class="card-title">JJ1POW局について</h5>
-              <p class="card-text">OP : ５０代のカムバックハムです。鎌倉市で小さくアマチュア無線局をしています。１９８０年頃に２エリアで局を開いてました。</p>
+              <p class="card-text">OP : ５０代のカムバックハムです。鎌倉市で小さくアマチュア無線局をしています。１９８０年頃に２エリアでも局を開いてました。</p>
               <p class="card-text">QTH : 鎌倉市の浜および山岳エリア、さらに江ノ島や逗子で移動運用しています。自宅は江ノ電極楽寺駅近くです。</p>
               <p class="card-text">JARL : 本局はJARL非会員です。</p>
               <p class="card-text">QRZ.com : 本局は登録しています。サイト<a href="https://qrz.com" target="_blank">qrz.com</a>にアクセスしてください。</p>

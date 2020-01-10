@@ -10,7 +10,7 @@
           <p class="lead">コールサインあるいは交信日（期間指定)して、貴局宛のQSLカードを検索できます。ファイル形式は、pdfです。</p>
           <br>
           <!-- Inqury form to callsigns -->
-          <b-form @submit="onSubmitc" @reset="onSubmitp">
+          <b-form @submit="onSubmitc">
             <b-input-group id="input-gp-callsign" prepend="Callsign" class="mt-3">
               <b-form-input id="input-callsign" v-model="form.callsign" width="6" size="6" pattern="[a-zA-Z0-9]{4,6}" placeholder="貴局コールサイン（６文字以内）"></b-form-input>
               <b-input-group-append>
@@ -61,36 +61,19 @@ export default {
     onSubmitc: function (evt) {
       evt.preventDefault()
       //      alert('push 1 ' + JSON.stringify(this.form))
-      console.log('push 1 ' + JSON.stringify(this.form))
+      // console.log('push 1 ' + JSON.stringify(this.form))
       //    Initialize list items
       this.items = []
       //    Post-operation to get qsl files with conditions
       this.axios.get('/qsldown', { baseURL: this.golang_url, params: this.form })
         .then((res) => {
-          console.log(res)
+          // console.log(res)
           //    Pass the result to items
           this.items = JSON.parse(res.data.results)
         })
         .catch((err) => {
-          console.log(err)
-        })
-    },
-    //    Run on clicking on Lower "Toroku" button
-    onSubmitp: function (evt) {
-      evt.preventDefault()
-      //      alert('push 2 ' + JSON.stringify(this.form))
-      console.log('push 2 ' + JSON.stringify(this.form))
-      //    Initialize list items
-      this.items = []
-      //    Post-operation to get qsl files with conditions
-      this.axios.post('/qsldown', { baseURL: this.golang_url, params: this.form })
-        .then((res) => {
-          console.log(res)
-          //    Pass the result to items
-          this.items = JSON.parse(res.data.results)
-        })
-        .catch((err) => {
-          console.log(err)
+          console.error('Unexpected error :', err)
+          // this.items = [{ 'No.': 0, 'Callsign': 'No Data', 'Date': '', 'File': '' }]
         })
     },
     urlget: function (ob) {

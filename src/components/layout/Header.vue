@@ -15,7 +15,15 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  metaInfo: {
+    title: 'Welcome to JJ1POW station!',
+    meta: [
+      { name: 'description', content: 'JJ1POW Ham radio QSL QSO 呼出符号 コールサイン アマチュア無線 無線局 50MHz 144MHz 430MHz jj1pow 鎌倉 Kamakura 極楽寺 長谷 QRP CW SSB FM ハム' },
+      { name: 'keywords', content: 'JJ1POW jj1pow コールサイン Callsign 呼出符号 アマチュア無線 無線局 50MHz 144MHz 430MHz Ham radio QSL QSO 鎌倉 Kamakura 極楽寺 長谷 QSLカード QRP CW SSB FM 大仏ハイキングコース' },
+      { name: 'auther', content: '月山堂' }
+    ]
+  }
 }
 </script>
 

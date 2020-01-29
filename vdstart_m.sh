@@ -1,3 +1,3 @@
 #!/bin/bash
-nohup serve -s dist -l tcp://localhost:8080  &
+nohup serve -d dist &
 

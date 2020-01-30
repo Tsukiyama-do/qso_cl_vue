@@ -44,7 +44,7 @@ export default {
   name: 'Qsldownload',
   data: function () {
     return {
-      golang_url: 'https://jj1pow.com:8081',
+      golang_url: 'http://jj1pow.com:8081',
       form: {
         //    Fields of conditions for searching QSL cards
         callsign: '',

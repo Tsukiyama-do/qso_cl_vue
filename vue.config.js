@@ -23,12 +23,8 @@ module.exports = {
       })
   },
   devServer: {
-    port: 8443,
-    disableHostCheck: true,
-    https: {
-      key: fs.readFileSync('./private/https-jj1pow-com-003.key'),
-      cert: fs.readFileSync('./private/https-jj1pow-com-003.crt')
-    }
+    port: 8080,
+    disableHostCheck: true
   }
 }
 

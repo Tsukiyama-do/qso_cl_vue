@@ -5,6 +5,7 @@
         <div class="jumbotron" style="background-color: rgba(245, 245, 245, 0.7); ">
           <h1 class="display-4">最新情報</h1>
           <p class="mb-5">
+            オンエアー:2020/05/30(長谷貯水池） : 1 qso <br />
             オンエアー:2020/03/15(自宅ベランダ） : 1 qso <br />
             ホームページ:2020/01/04 : ホームページのリフォーム <br />
             オンエアー:2019/12/01(六国見山の山頂） : 3 qso <br />
